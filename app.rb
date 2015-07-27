@@ -7,3 +7,7 @@ require "pry"
 require_relative "db/connection"
 require_relative "models/entry"
 require_relative "controllers/entries"
+
+get '/' do
+    erb :index
+end

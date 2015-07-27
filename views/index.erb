@@ -1,0 +1,11 @@
+<h2>Welcome to WDInstagram</h2>
+<a href="/new">New Image</a>
+<ul>
+<% @entries.each do |entry| %>
+  <li>
+    <%= entry.author %>
+    <img src="<%= entry.photo_url %>" alt="">
+    <%= entry.date_taken %>
+  </li>
+<%end%>
+</ul>
